@@ -1,0 +1,20 @@
+1-A class in C++ is a user defined type or data structure declared with keyword class that has data and functions (also called methods) as its members whose access is governed by the three access specifiers private, protected or public (by default access to members of a class is private).
+A class is a C++ vehicle for translating an abstraction to a user-defined type. It combines
+data representation and methods for manipulating that data into one neat package. Let’s
+look at a class that represents stocks.
+2-Abstraction is a process where you show only “relevant” data and “hide” unnecessary details of an object from the user. Consider your mobile phone, you just need to know what buttons are to be pressed to send a message or make a call, What happens when you press a button, how your messages are sent, how your calls are connected is all abstracted away from the user.
+Encapsulation is the process of combining data and functions into a single unit called class. In Encapsulation, the data is not accessed directly; it is accessed through the functions present inside the class. In simpler words, attributes of the class are kept private and public getter and setter methods are provided to manipulate these attributes. Thus, encapsulation makes the concept of data hiding possible.
+classes apply it through
+3- Object is an instance of the class 
+4-Member function definitions can have return types and arguments. But
+they also have two special characteristics:
+n When you define a member function, you use the scope-resolution operator (::) to
+identify the class to which the function belongs.
+n Class methods can access the private components of the class.
+data members go into the private section and member functions go into the
+public section
+6-When an object is created, compiler makes sure that constructors for all of its sub objects (its member and inherited objects) are called. If members have default constructors or constructor without parameter then these constructors are called automatically, otherwise parameterized constructors can be called using initialize list 
+If the object was created as an automatic variable, its destructor is automatically called when it goes out of scope. If the object was created with a new expression, then its destructor is called when the delete operator is applied to a pointer to the object.
+8-A default constructor is a constructor which can be called with no arguments (either defined with an empty parameter list, or with default arguments provided for every parameter). And it's important for initializing as Doing nothing would leave the pointer pointing somewhere randomly in memory and with the size fields set to garbage, violating the class invariants and rendering the object unusable.
+
+10-If you had a function that returned this, it would be a pointer to the current object, while a function that returned *this would be a "clone" of the current object, allocated on the stack -- unless you have specified the return type of the method to return a reference.
